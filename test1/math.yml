@@ -1,0 +1,3 @@
+task:
+- name: create folder
+  mkdir: samara1
