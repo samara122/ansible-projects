@@ -16,7 +16,7 @@
     unarchive:
       src: https://www.free-css.com/assets/files/free-css-templates/download/page280/petology.zip
       dest: /var/www/html
-    remote_src: yes  
+      remote_src: yes  
   - name: Start service httpd, if not running
     service:
       name: httpd
