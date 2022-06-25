@@ -1,6 +1,16 @@
 - hosts: all
   tasks:
-  - name: install the latest version of Apache
+  - name: samara install the latest version of Apache
     yum:
       name: httpd
       state: latest
+
+  - name: Start service httpd, if not running
+    service:
+      name: httpd
+      state: started
+
+  - name: Enable service httpd, and not touch the running state
+    service:
+      name: httpd
+      enabled: yes
