@@ -4,12 +4,18 @@
     yum:
       name: httpd
       state: latest
-
+  - name: samara install the latest version of wget
+    yum:
+      name: wget
+      state: latest
+  - name: samara install the latest version of unzip
+    yum:
+      name: unzip
+      state: latest
   - name: Start service httpd, if not running
     service:
       name: httpd
       state: started
-
   - name: Enable service httpd, and not touch the running state
     service:
       name: httpd
