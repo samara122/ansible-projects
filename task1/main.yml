@@ -1,0 +1,30 @@
+- hosts: all
+  tasks:
+  - name: samara install the latest version of Apache
+    yum:
+      name: httpd
+      state: latest
+  - name: samara install the latest version of wget
+    yum:
+      name: wget
+      state: latest
+  - name: samara install the latest version of unzip
+    yum:
+      name: unzip
+      state: latest
+  - name: Unarchive a template file
+    unarchive:
+      src: https://www.free-css.com/assets/files/free-css-templates/download/page280/petology.zip
+      dest: /var/www/html
+      remote_src: yes  
+
+  - shell:
+      cmd: mv /var/www/html/petology-html/* /var/www/html
+  - name: Start service httpd, if not running
+    service:
+      name: httpd
+      state: started
+  - name: Enable service httpd, and not touch the running state
+    service:
+      name: httpd
+      enabled: yes
