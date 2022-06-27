@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - file: 
+        path: /tmp/exam.txt
+        state: touch
+    - file: 
+        path: /tmp/sabak.yml
+        state: touch
+    - file:
+        path: /tmp/uchoo.md
+        state: touch
