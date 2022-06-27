@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars:
+    paketter:
+      - httpd
+      - wget
+      - curl
+      - tree
+  tasks:
+    - yum:
+        name: "{{ paketter }}"
+        state: latest
