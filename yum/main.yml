@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+    - yum: 
+        name: wget
+        state: latest
+    - yum:
+        name: curl
+        state: latest
+    - yum:
+        name: tree
+        state: latest
+    - yum:
+        name: httpd
+        state: latest
