@@ -1,0 +1,24 @@
+- hosts: web
+  tasks:
+    - name: cheking
+      ping:
+
+    - name: create
+      file:
+         path: /tmp/red
+         state: touch
+
+    - name: install tree
+      yum:
+        name: tree
+        state: latest
+
+
+    - name: install Apache
+      yum:
+        name: httpd
+        state: latest
+    - name: create folder
+      file:
+        path: /tmp/jami
+        state: directory
