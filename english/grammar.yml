@@ -1,0 +1,6 @@
+- hosts web  
+  tasks:
+   - name: Install ntp
+     yum:
+   - name: ntp
+      state: latest 
