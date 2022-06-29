@@ -1,0 +1,15 @@
+ cat main.yml
+- hosts: all
+  handlers:
+  - name: Restart ntpd
+    service:
+      name: ntpd
+      state: restarted
+      enabled: yes
+
+  tasks:
+  - name: Install ntpd
+    yum:
+      name: ntp
+      state: latest
+    notify: Restart ntpd
