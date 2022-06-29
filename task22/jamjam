@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+    - name:creating files
+      file:
+        path: /tmp/dog
+        state: touch        
