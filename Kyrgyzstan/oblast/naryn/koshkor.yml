@@ -1,0 +1,6 @@
+---
+  - hosts: web
+    tasks:
+      yum:
+      package: ntp
+      state: latest
