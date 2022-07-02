@@ -1,0 +1,6 @@
+---
+- hosts:
+  tasks:
+    - yum:
+        name: wget
+        state: latest
