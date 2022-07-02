@@ -1,5 +1,5 @@
 ---
-- hosts:
+- hosts: web
   tasks:
     - yum:
         name: wget
