@@ -1,0 +1,7 @@
+---
+- hosts: web
+  task:
+  - file:
+      path: /tmp/family
+      state: touch
+   
