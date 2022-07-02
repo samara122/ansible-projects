@@ -1,7 +1,0 @@
-- hosts: all
-  handlers:
-  - name: Restart ntpd
-    service:
-      name: ntpd
-      state: restarted
-      enabled: yes
