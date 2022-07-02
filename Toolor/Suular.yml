@@ -1,5 +1,0 @@
-- name: Update ntpd on Debian
-  apt:
-    name: ntp
-    state: latest
-
