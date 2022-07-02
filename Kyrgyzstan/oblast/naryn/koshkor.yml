@@ -3,4 +3,6 @@
     tasks:
       yum:
       package: ntp
-      state: latest
+      state: latest 
+
+ 
