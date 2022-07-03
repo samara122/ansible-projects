@@ -1,6 +1,13 @@
 ---
-- hosts: web
+- hosts: all
   tasks:
     - yum:
-        name: wget
+        name: httpd
         state: latest
+    - file:
+        path: /tmp/return.yml
+        state: touch 
+    - file:
+        path: ~/myfolder10
+        state: directory
+
