@@ -7,7 +7,11 @@
     - file:
         path: /var/keluu.yml
         state: directory
-            
+    - file:
+        path: /tmp/jaz.yml
+        state: touch
+             
+
 
 
     
