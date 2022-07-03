@@ -4,7 +4,11 @@
     - yum:
         name: ntp
         state: latest
-        
+    - file:
+        path: /var/keluu.yml
+        state: directory
+            
+
 
     
       
