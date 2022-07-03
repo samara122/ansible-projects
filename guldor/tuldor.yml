@@ -7,3 +7,9 @@
     - file:
         path: /etc/myfolder.yml
         state: touch     
+    - file:
+        path: /var/kukla.yml
+        state: directory
+        
+      
+      
