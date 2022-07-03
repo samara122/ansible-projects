@@ -1,8 +1,7 @@
 ---
 - hosts: all
   vars:
-    v1: /var/games/
+    name: Samara Ataeva
   tasks:
-    - file:
-        name: "{{v1}}"mycode.yml
-        state: touch
+    - debug:
+        msg: "Hello"
