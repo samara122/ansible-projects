@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - yum: 
+        name: wget
+        state: latest
+    - yum:
+        name: ntp
+        state: latest
+    - yum: 
+        name: tree
+        state: latest
+  
+
