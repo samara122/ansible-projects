@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - file:
+        name: /tmp/mycode.yml
+        state: touch
