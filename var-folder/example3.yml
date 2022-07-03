@@ -1,0 +1,13 @@
+---
+- hosts: all
+  vars:
+    myprograms:
+      - httpd
+      - wget
+      - ntp
+      - tree
+  tasks:
+    - yum: 
+        name: "{{ myprograms }}"
+        state: latest
+  
