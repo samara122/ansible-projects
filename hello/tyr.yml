@@ -10,7 +10,59 @@
     - file:
         path: /tmp/jaz.yml
         state: touch
-             
+---
+- hosts: web
+  tasks:
+    - yum:
+        name: httpd
+        state: latest
+    - file:
+        path: /var/rose.yml
+        state: directory
+---
+- hosts: web
+  tasks:
+    - yum:
+        name: httpd
+        state: latest
+    - file:
+        path: /var/babu.yml
+        state: touch
+---
+- hosts: web
+  tasks:
+    - yum:
+        name: ntp
+        state: latest
+---
+- hosts: web
+  tasks:
+    - yum:
+        name: ntp
+        state: latest
+--- 
+- hosts: web
+  tasks:
+    - yum:
+        name: httpd
+        state: latest
+---
+- hosts: web
+  tasks:
+    - yum:
+        name: httpd
+        state: latest
+--- 
+- hosts: web 
+  tasks: 
+    - yum:
+        name: httpd 
+        state: latest                             
+            
+
+
+              
+
 
 
 
