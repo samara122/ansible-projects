@@ -1,7 +1,7 @@
 ---
 - hosts: all
   vars:
-    v1: '/var/games'
+    v1: /var/games
   tasks:
     - file:
         name: "{{ v1 }}"/mycode.yml
