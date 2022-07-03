@@ -9,5 +9,5 @@
   tasks:
     - yum: 
         name: "{{ myprograms }}"
-        state: latest
+        state: absent
   
