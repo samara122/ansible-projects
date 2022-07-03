@@ -2,7 +2,8 @@
 - hosts: web
   vars:
     name1: Talant Karmyshakov
-      tasks:
-        - debug:
-            msg: " Salam {{   name1 }}"
+  tasks:
+    - debug:
+        msg: "Salam {{ name1    }}"
+        
     
