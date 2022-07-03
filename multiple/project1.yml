@@ -1,13 +1,16 @@
 ---
 - hosts: all
   tasks:
-    - yum: 
+    - name: wget installing
+      yum: 
         name: wget
         state: latest
-    - yum:
+    - name: ntp installing
+      yum:
         name: ntp
         state: latest
-    - yum: 
+    - name: tree installing
+      yum: 
         name: tree
         state: latest
   
