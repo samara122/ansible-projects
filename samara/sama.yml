@@ -1,0 +1,16 @@
+---
+- hosts: all 
+  vars:
+    parents:
+      - Talant
+      - Samara
+    kids:
+      - Meri
+      - Azhar
+      - jaska
+  tasks:
+    - debug:
+        msg: "{{ parents }}"
+              "{{  kids }}"   
+             
+    
