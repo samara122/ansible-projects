@@ -1,0 +1,6 @@
+---
+- hosts: web 
+  vars:
+    name2: Talant Karmushakov Asanbaevich
+      debug:
+        msg: " salam {{ name2  }}"
