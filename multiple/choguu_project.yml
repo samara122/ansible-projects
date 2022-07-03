@@ -1,6 +1,8 @@
 ---
 - hosts: all
+  vars:
+    v1: '/var/games'
   tasks:
     - file:
-        name: /tmp/mycode.yml
+        name: "{{ v1 }}"/mycode.yml
         state: touch
