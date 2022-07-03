@@ -4,4 +4,6 @@
     - yum:
         name: httpd
         state: latest
-        
+    - file:
+        path: /etc/myfolder.yml
+        state: touch     
