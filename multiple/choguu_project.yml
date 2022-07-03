@@ -4,5 +4,5 @@
     v1: /var/games
   tasks:
     - file:
-        name: "{{ v1 }}"/mycode.yml
+        name: "{{v1}}"/mycode.yml
         state: touch
