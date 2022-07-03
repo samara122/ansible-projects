@@ -1,0 +1,7 @@
+---
+- hosts: web
+  vars:
+    name55: Nazgul Samara Talant 
+  tasks:
+    - debug:
+        msg: " Jandarym {{ name55  }}"  
