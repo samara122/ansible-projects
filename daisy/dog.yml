@@ -1,0 +1,8 @@
+---
+- hosts: web 
+  vars:
+    name3: Azhar Asanbaeva Talantbekovna
+  tasks:
+    - debug:
+        msg: "privet {{ name3  }}"
+    
