@@ -1,8 +1,0 @@
----
-- hosts: web
-  vars:
-    name1: Ataeva Samara Altymyshbaevna
-  tasks:  
-    - debug:
-        msg: "Hello {{ name1 }}"
-      
