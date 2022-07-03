@@ -1,0 +1,9 @@
+---
+- hosts: all 
+  vars:
+    name11: Samara Ataeva
+  tasks:
+    - debug:
+        msg: " Hello {{ name11 }}"
+    
+
