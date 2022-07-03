@@ -6,8 +6,17 @@
       - wget
       - ntp
       - tree
+    myfolders:
+      - til
+      - bash
+      - murun
+      - kulak
+      - kursak
   tasks:
     - yum: 
         name: "{{ myprograms }}"
-        state: absent
+        state: latest
+    - file:
+        name: ~/"{{ myfolders }}"
+        state: directory
   
