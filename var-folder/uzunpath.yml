@@ -1,0 +1,8 @@
+---
+- hosts: web
+  vars:
+    my_uzun: '~'
+  tasks:
+    - file: 
+        path: '{{ myuzun }}/newfile'
+        state: touch
