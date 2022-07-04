@@ -1,12 +1,15 @@
 --- 
 - hosts: web
-  vars:
-    name:
-      - samara
-      - talant
-      - meri
   tasks:
-    - file:
-        path: ~/ '{{ name }}'
-        state: directory
+    - name: creating file
+      file:
+        path: '/tmp/{{ item  }}'
+        state: touch
+      loop:
+        - samara
+        - talant
+        - meri
+        - azhar  
+    
+ 
         
