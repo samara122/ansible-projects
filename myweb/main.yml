@@ -10,3 +10,4 @@
       yum:
         name: "{{ packs }}" 
         state: latest
+        lock_timeout: 180
