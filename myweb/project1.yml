@@ -1,0 +1,13 @@
+---
+- hosts: web
+  tasks:
+    - name: creating files
+      file:
+        path: '/tmp/{{ item }}'
+        state: touch
+      loop:
+        - jashyl
+        - kyzyl
+        - kok
+        - kara
+        - ak 
