@@ -5,9 +5,14 @@
       - httpd
       - wget
       - ntp
+    my_folders: folder1
   tasks:
     - name: Installing packages
       yum:
         name: "{{ packs }}" 
         state: latest
         lock_timeout: 180
+    - name: create folder samara
+      file:
+        path: '/tmp/{{ my_folders }}'
+        state: directory
