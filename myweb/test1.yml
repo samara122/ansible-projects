@@ -1,0 +1,15 @@
+---
+- hosts: web
+  tasks:
+    - name: creating folders
+      file:
+        path: /tmp/'{{ item }}'
+        state: directory
+      loop:
+        - red
+        - green
+        - yellow
+        - white
+        - black
+           
+
