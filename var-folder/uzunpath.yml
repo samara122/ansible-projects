@@ -4,5 +4,5 @@
     my_uzun: '~'
   tasks:
     - file: 
-        path: '{{ myuzun }}/newfile'
+        path: '{{ my_uzun }}/newfile'
         state: touch
