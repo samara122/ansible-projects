@@ -2,4 +2,6 @@
 - hosts: web
   tasks:
     - debug: 
-        msg: "{{ ansible_facts['distribution'] }}"
+        msg: 
+          - "{{ ansible_facts['distribution'] }}"
+          - "{{ ansible_facts['distribution_major_version'] }}"
