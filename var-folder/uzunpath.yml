@@ -9,4 +9,4 @@
     - file:
         path: '{{ my_uzun }}/samarafolder'
         state: directory
-      when: "{{ ansible_facts['distribution'] == Ubuntu }}"
+      when: "{{ ansible_facts['distribution'] }} == Ubuntu"
