@@ -1,7 +1,8 @@
 --- 
 - hosts: web
-  var:
+  vars:
     name:
+    
       - samara
       - talant
       - meri
