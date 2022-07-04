@@ -1,10 +1,12 @@
 ---
 - hosts: web
+  vars:
+    packs:
+      - httpd
+      - wget
+      - ntp
   tasks:
     - name: Installing packages
       yum:
-        name: 
-          - ntp
-          - httpd
-          - wget
+        name: "{{ packs }}" 
         state: latest
