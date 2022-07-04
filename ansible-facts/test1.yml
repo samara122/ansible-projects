@@ -1,4 +1,6 @@
 ---
 - hosts: web
   tasks:
-    - debug: ansible_facts['distribution']
+    - debug: 
+        msg:
+          - '{{ distribution }}'
