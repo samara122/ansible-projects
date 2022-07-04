@@ -1,0 +1,16 @@
+---
+- hosts: web
+  vars:
+    myfolders: 
+      - naryn
+      - osh
+      - kol
+      - jalalabad
+      - batken
+      - chui
+      - talas
+  tasks:
+    - name: creating folders
+      file:
+        path: '~/{{ myfolders }}'
+        state: directory
