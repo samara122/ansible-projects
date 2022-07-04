@@ -2,13 +2,12 @@
 - hosts: web
   vars:
     name:
-    
       - samara
       - talant
       - meri
   tasks:
     - file:
-        path: '{{ name }} ~/myfolder'
-        state: directory   
+        path: '{{ name  }}' /tmp/myfolder
+        state: directory      
     
-       
+      
