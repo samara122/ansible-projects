@@ -7,7 +7,6 @@
       - meri
   tasks:
     - file:
-        path: "{{ name  }} /tmp/myfolder"
-        state: directory      
-    
-      
+        path: ~/ '{{ name }}'
+        state: directory
+        
