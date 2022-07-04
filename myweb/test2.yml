@@ -1,16 +1,11 @@
 ---
 - hosts: web
-  vars:
-    myfolders: 
-      - naryn
-      - osh
-      - kol
-      - jalalabad
-      - batken
-      - chui
-      - talas
   tasks:
-    - name: creating folders
-      file:
-        path: '~/{{ myfolders }}'
-        state: directory
+  - name: Uninstall packages
+    yum:
+      name: '{{ item }}'
+      state: absent
+    loop:
+      - httpd
+      - wget
+      - ntp
