@@ -4,7 +4,7 @@
     myshort: '/tmp'
   tasks:
     - file:
-        path: '{{ myshort }} /tmp/flower'
+        path: '{{ myshort }} flower'
         state: touch   
     - file:
         path: '{{ myshort }} /tmp/tulip'
