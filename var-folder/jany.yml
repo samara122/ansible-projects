@@ -1,0 +1,13 @@
+--- 
+- hosts:
+  var:
+    name:
+      - samara
+      - talant
+      - meri
+  tasks:
+    - file:
+        path: '{{ name }} ~/myfolder'
+        state: directory   
+    
+       
