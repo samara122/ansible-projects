@@ -1,0 +1,12 @@
+---
+- hosts: web
+  vars:
+    myshort: '/tmp'
+  tasks:
+    - file:
+        path: '{{ myshort }} /tmp/flower'
+        state: touch   
+    - file:
+        path: '{{ myshort }} /tmp/tulip'
+        state: directory
+      when:  ansible_facts['distribution'] == "Ubuntu"     
