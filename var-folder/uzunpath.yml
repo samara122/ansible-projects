@@ -4,5 +4,9 @@
     my_uzun: '~'
   tasks:
     - file: 
-        path: '{{ my_uzun }}/newfile'
+        path: '{{ my_uzun }}/treefile'
         state: touch
+    - file:
+        path: '{{ my_uzun }}/samarafolder'
+        state: directory
+      when: "{{ ansible_facts['distribution'] }}" == "Ubuntu"
