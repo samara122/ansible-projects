@@ -3,7 +3,7 @@
   tasks:
     - name: creating folders
       file:
-        path: /tmp/'{{ item }}'
+        path: '/tmp/{{ item }}'
         state: directory
       loop:
         - red
