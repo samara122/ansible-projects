@@ -2,5 +2,4 @@
 - hosts: web
   tasks:
     - debug: 
-        msg:
-          - '{{ distribution }}'
+        msg: '{{ distribution }}'
