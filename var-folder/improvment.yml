@@ -1,6 +1,10 @@
 ---
 - hosts: all 
   tasks:
+    - name: Install Apache
+      yum:
+        name: httpd
+        state: latest
     - name: Install Apache start and enable
       service:
         name: httpd
@@ -13,6 +17,11 @@
       apt:
         name: apache2
         state: present
+    - name: apache2 start and enabled
+      service:
+        name: apache2
+        state: present
+        enabled: yes  
       when:  ansible_facts['distribution'] == "Ubuntu"    
 
 
