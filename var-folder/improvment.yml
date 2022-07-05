@@ -1,0 +1,23 @@
+---
+- hosts: all 
+  tasks:
+    - name: Install Apache start and enable
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+      when: ansible_facts['distribution'] == "CentOS" 
+
+  tasks:
+    - name: Install apache httpd
+      apt:
+        name: apache2
+        state: present
+      when:  ansible_facts['distribution'] == "Ubuntu"    
+
+
+        
+        
+
+      
+    
