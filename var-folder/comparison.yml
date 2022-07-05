@@ -3,9 +3,9 @@
   vars:
     samara: '~'
   tasks:
-    - file:
-        path: '{{ samara }}/beatiful'
-        state: touch
+   - file:
+       path: '{{ samara }}/beatiful'
+       state: touch
   when:  ansible_facts['distribution'] == "CentOS"
     - file:
         path: '{{ samara }}/daisy'
