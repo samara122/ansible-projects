@@ -4,9 +4,10 @@
     myshort: '/tmp'
   tasks:
     - file:
-        path: '{{ myshort }} flower'
-        state: touch   
+        path: '{{ myshort }}/flower'
+        state: directory   
+      when:  ansible_facts['distribution'] == "Centos"
     - file:
-        path: '{{ myshort }} /tmp/tulip'
+        path: '{{ myshort }}/tulip'
         state: directory
       when:  ansible_facts['distribution'] == "Ubuntu"     
