@@ -9,7 +9,7 @@
       when:  ansible_facts['distribution'] == "CentOS"
     - file:
         path: '{{ samara }}/daisy'
-        state: directory
+        state: touch
       when:  ansible_facts['distribution'] == "Ubuntu"
    
        
