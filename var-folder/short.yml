@@ -6,7 +6,7 @@
     - file:
         path: '{{ myshort }}/flower'
         state: directory   
-      when:  ansible_facts['distribution'] == "Centos"
+      when:  ansible_facts['distribution'] == "CentOS"
     - file:
         path: '{{ myshort }}/tulip'
         state: directory
