@@ -1,0 +1,11 @@
+---
+- hosts: web
+  tasks:
+    - name: install tree
+      include_tasks: tree.yml
+
+    - name: install apache
+      include_tasks: apache.yml
+    
+    - name: install wget
+      include_tasks: wget.yml
