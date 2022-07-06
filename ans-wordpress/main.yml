@@ -1,9 +1,22 @@
 ---
 - hosts: web
+  vars:
+    packs:
+      - epel-release
+      - yum-utils
+      - http://rpms.remirepo.net/enterprise/remi-release-7.rpm 
+    php_v: 74
+    php_packs:
+      - php
+      - php-common
+      - php-mcrypt
+      - php-cli
+      - php-gd
+      - php-curl
+      - php-mysql
   tasks:
     - name: install apache
       include_tasks: apache.yml
     
     - name: install php
       include_tasks: php.yml
-      
