@@ -20,3 +20,6 @@
     
     - name: install php
       include_tasks: php.yml
+
+    - name: download template
+      include_tasks: mytemplate.yml

@@ -1,0 +1,5 @@
+- name: download template and unarchive
+  unarchive:
+    src: https://phpweb.org/download/sublime.zip
+    dest: /var/www/html
+    remote_src: yes
