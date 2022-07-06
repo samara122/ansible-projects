@@ -3,3 +3,9 @@
     src: https://phpweb.org/download/sublime.zip
     dest: /var/www/html
     remote_src: yes
+
+- name: move tempalte contents
+  shell: "mv /var/www/html/sublime/* /var/www/html"
+
+- name: delete empty folder
+  shell: "rm -rf /var/www/html/sublime"
