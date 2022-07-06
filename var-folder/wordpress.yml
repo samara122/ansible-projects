@@ -1,0 +1,14 @@
+---
+- hosts: web
+  tasks:
+    - name: reapeted tasks
+      file:
+        path: '/tmp/{{ item  }}'
+        state: touch
+      loop:
+        - samara
+        - talant
+        - meri
+        - azhar  
+        
+      
