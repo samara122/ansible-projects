@@ -4,6 +4,7 @@
     packs:
       - epel-release
       - yum-utils
+      - unzip
       - http://rpms.remirepo.net/enterprise/remi-release-7.rpm 
     php_v: 74
     php_packs:
