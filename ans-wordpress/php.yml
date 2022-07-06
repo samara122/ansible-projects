@@ -1,0 +1,8 @@
+- name: Install dependencies (prerequisites)
+  yum:
+    name: "{{ packs }}"
+    state: latest
+  vars:
+    packs:
+      - epel-release
+      - yum-utils 

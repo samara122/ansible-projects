@@ -1,0 +1,9 @@
+---
+- hosts: web
+  tasks:
+    - name: install apache
+      include_tasks: apache.yml
+    
+    - name: install php
+      include_tasks: php.yml
+      
