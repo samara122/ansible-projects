@@ -5,19 +5,19 @@
 
 - name: Set php version to 74
   shell: "yum-config-manager --enable remi-php74"
-  when: "{{ php_v }} == 74"
+  when: php_v == 74
 
 - name: Set php version to 73
   shell: "yum-config-manager --enable remi-php73"
-  when: "{{ php_v }} == 73"
+  when: php_v == 73
 
 - name: Set php version to 72
   shell: "yum-config-manager --enable remi-php72"
-  when: "{{ php_v }} == 72"
+  when: php_v == 72
 
 - name: Set php version to 71
   shell: "yum-config-manager --enable remi-php71"
-  when: "{{ php_v }} == 71"
+  when: php_v == 71
 
 - name: Install php with all dependencies
   yum: 
