@@ -1,4 +1,0 @@
-- hosts: all
-  tasks:
-    - name: update hostname
-      include_tasks: invent.yml
