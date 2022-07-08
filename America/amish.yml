@@ -1,6 +1,6 @@
 ---
  - hosts: web
-  tasks:
-    yum:
-    name: httpd
-    state: latest
+   tasks:
+     yum:
+     name: httpd
+     state: latest
