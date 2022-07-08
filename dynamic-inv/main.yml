@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-    - name: update hostname
-      include_tasks: invent.yml
+    # - name: update hostname
+    #   include_tasks: invent.yml
     - name: debug output
       include_tasks: debug.yml
