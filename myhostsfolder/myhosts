@@ -1,2 +1,3 @@
 [web]
-server1 ansible_host=143.198.172.48
+server1 ansible_host=159.223.151.227
+server2 ansible_host=159.223.159.171
